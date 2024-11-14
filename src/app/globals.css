@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .text-bg{
+        background-image: linear-gradient(to right , #9cb878 0% , #fdf0ea 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    }
+
+} 
