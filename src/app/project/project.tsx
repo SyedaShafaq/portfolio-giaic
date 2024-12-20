@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Project = () => {
   return (
-    <div className='pt-16 pb-16 bg-[#394326]'>
+    <div id='projects' className='pt-16 pb-16 bg-[#394326]'>
           <h1 className="bg-[#9cb878]  w-fit text-center px-4 py-3 mx-auto text-[#fdf0ea] text-2xl sm:text-3xl md:4xl uppercase rounded-md">
        MY PROJECTS
       </h1>

@@ -6,7 +6,7 @@ import { aboutInfo } from "../../../Data/data";
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#394326]">
+    <div id="about" className="pt-16 pb-16 bg-[#394326]">
       <h1 className="bg-[#9cb878] w-fit text-center px-4 py-3 mx-auto text-[#fdf0ea] text-2xl sm:text-3xl md:4xl uppercase rounded-md">
         ABOUT ME
       </h1>

@@ -11,9 +11,9 @@ interface Props{
   }
   const Nav = ({openNav}:Props) => {
     const [navBg , setNavBg] = useState(false)
-    useEffect(()=>{
+     useEffect(()=>{
 const Handler = () => {
-if(window.scrollY >= 80){
+if(window.scrollY >= 90){
   setNavBg(true)
 } if(window.scrollY < 80){
   setNavBg(false)
@@ -22,8 +22,8 @@ if(window.scrollY >= 80){
 window.addEventListener("scroll",Handler)
 return ()=>{
   window.removeEventListener("scroll",Handler)
-}
-    },[])
+};
+})
     return (
       <div className={`fixed ${navBg ? "bg-[#394326]" : "fixed"} h-[12vh] text-[#fdf0ea] bg-[#394326] z-[10] w-full`} >
           <div className='sm:w-[99%] w-[95%] mx-auto flex h-[100%] items-center justify-between'>
@@ -37,13 +37,13 @@ return ()=>{
 </div>
   {/**For Nav links */}
   <ul className='hidden lg:flex items-center space-x-9'>
-  <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='/home' >Home</Link> </li>
-  <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href= '../about' >About</Link> </li>
-    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='/services' >Services</Link> </li>
-    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='/projects' >Projects</Link> </li>
-    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='/reviews' >Reviews</Link> </li>
+  <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='#home' >Home</Link> </li>
+  <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href= '#about' >About</Link> </li>
+    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='#services' >Services</Link> </li>
+    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='#projects' >Projects</Link> </li>
+    <li className='text-[17px] font-medium hover:text-[#d2c3be]  '><Link href='#reviews' >Reviews</Link> </li>
  
-    <li className='text-[17px] font-medium hover:text-[#d2c3be] ' ><Link href=''>Contact</Link> </li>
+    <li className='text-[17px] font-medium hover:text-[#d2c3be] ' ><Link href='#contact'>Contact</Link> </li>
    
   </ul>
   {/**For Nav Buttons */}
